@@ -1,7 +1,7 @@
 FROM ubuntu:14.04
 MAINTAINER Baiju Muthukadan <baiju.m.mail@gmail.com>
 
-RUN apt-get install -y -qq unzip
+RUN DEBIAN_FRONTEND=noninteractive apt-get install -y -qq unzip
 
 RUN mkdir /var/consul
 RUN mkdir /usr/local/share/consul
