@@ -14,7 +14,7 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get update -y
 # RUN echo oracle-java8-set-default shared/accepted-oracle-license-v1-1 select true | /usr/bin/debconf-set-selections
 # RUN DEBIAN_FRONTEND=noninteractive apt-get install -y -qq oracle-java8-set-default
 
-RUN DEBIAN_FRONTEND=noninteractive apt-get install -y -qq jenkins
+RUN DEBIAN_FRONTEND=noninteractive apt-get install -y -qq jenkins graphviz
 
 EXPOSE 9876 9877
 
